@@ -1,0 +1,6 @@
+plugins
+*.tfvars
+*.tfstate
+*.tfstate.*
+.vscode
+*.pem

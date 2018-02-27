@@ -1,0 +1,79 @@
+{
+  "containerDefinitions": [
+      {
+          "dnsSearchDomains": null,
+          "logConfiguration": null,
+          "entryPoint": null,
+          "portMappings": [
+              {
+                  "hostPort": 0,
+                  "protocol": "tcp",
+                  "containerPort": 80
+              }
+          ],
+          "command": [],
+          "linuxParameters": null,
+          "cpu": 10,
+          "environment": [
+              {
+                  "name": "DB_CONNECTION",
+                  "value": "mysql"
+              },
+              {
+                  "name": "DB_HOST",
+                  "value": "db.lynn.demo"
+              },
+              {
+                  "name": "DB_PORT",
+                  "value": "3306"
+              },
+              {
+                  "name": "DB_DATABASE",
+                  "value": "todo"
+              },
+              {
+                  "name": "DB_USERNAME",
+                  "value": "root"
+              },
+              {
+                  "name": "DB_PASSWORD",
+                  "value": "password"
+              },
+              {
+                  "name": "IMAGE_S3_BUCKET",
+                  "value": "tf-demo-todo-image"
+              },
+              {
+                  "name": "IMAGE_DOMAIN",
+                  "value": "s3-us-west-2.amazonaws.com/tf-demo-todo-image"
+              }
+          ],
+          "ulimits": null,
+          "dnsServers": null,
+          "mountPoints": [],
+          "workingDirectory": null,
+          "dockerSecurityOptions": null,
+          "memory": 128,
+          "memoryReservation": null,
+          "volumesFrom": [],
+          "image": "lynnlin827/demo-laravel-todo",
+          "disableNetworking": null,
+          "essential": true,
+          "links": null,
+          "hostname": null,
+          "extraHosts": null,
+          "user": null,
+          "readonlyRootFilesystem": null,
+          "dockerLabels": null,
+          "privileged": null,
+          "name": "demo-laravel-todo"
+      }
+  ],
+  "volumes": [],
+  "networkMode": null,
+  "memory": null,
+  "cpu": null,
+  "placementConstraints": [],
+  "family": "demo-ecs-task-def-laravel-todo",
+  "taskRoleArn": "arn:aws:iam::xxxxx:role/demoECSTaskRoleAccessS3"
+}
