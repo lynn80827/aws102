@@ -1,4 +1,4 @@
-plugins
+.terraform
 *.tfvars
 *.tfstate
 *.tfstate.*
