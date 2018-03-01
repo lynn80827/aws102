@@ -189,7 +189,7 @@ resource "aws_route53_zone" "private_hosted_zone" {
 }
 
 resource "aws_route53_record" "domain_record_db" {
-  name = "db.lynn.demo"
+  name = "tfdb.lynn.demo"
   type = "CNAME"
   zone_id = "${aws_route53_zone.private_hosted_zone.zone_id}"
   ttl = 300

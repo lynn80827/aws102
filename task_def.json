@@ -21,7 +21,7 @@
               },
               {
                   "name": "DB_HOST",
-                  "value": "db.lynn.demo"
+                  "value": "tfdb.lynn.demo"
               },
               {
                   "name": "DB_PORT",
